@@ -1,4 +1,6 @@
-# Subtract Cloud API ![Subtract Manufacturing](https://subtractmanufacturing.com/wp-content/uploads/2025/05/subtract_logo_01_social-small-red.png)
+ ![Subtract Manufacturing](https://subtractmanufacturing.com/wp-content/uploads/2025/05/subtract_logo_01_social-small-red.png)
+
+# Subtract Cloud API
 
 A modern, high-performance backend API built with FastAPI and SQLModel, designed to handle connection to the Subtract Application Interface.
 
