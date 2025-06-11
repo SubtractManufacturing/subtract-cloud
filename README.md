@@ -1,6 +1,6 @@
-# Subtract Cloud API
+# Subtract Cloud API! [Subtract Manufacturing](https://subtractmanufacturing.com/wp-content/uploads/2025/05/subtract_logo_01_social-small-red.png)
 
-A modern, high-performance backend API built with FastAPI and SQLModel, designed to handle shipment tracking and inventory management.
+A modern, high-performance backend API built with FastAPI and SQLModel, designed to handle connection to the Subtract Application Interface.
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -105,78 +105,6 @@ backend/
 └── run.py                # Script to run the application
 ```
 
-## 📡 API Endpoints
-
-### Items
-
-- `GET /api/items/` - List all items
-- `POST /api/items/` - Create a new item
-- `GET /api/items/{item_id}` - Get a specific item
-- `PUT /api/items/{item_id}` - Update an item
-- `DELETE /api/items/{item_id}` - Delete an item
-
-### Shipments
-
-- `GET /api/shipments/` - List all shipments
-- `POST /api/shipments/` - Create a new shipment
-- `GET /api/shipments/{shipment_id}` - Get a specific shipment
-- `GET /api/shipments/tracking/{tracking_number}` - Get shipment by tracking number
-- `PATCH /api/shipments/{shipment_id}` - Update a shipment
-- `DELETE /api/shipments/{shipment_id}` - Delete a shipment
-
-## 🔄 Switching to PostgreSQL for Production
-
-1. Install the PostgreSQL driver:
-
-   ```bash
-   uv pip install psycopg2-binary
-   ```
-
-2. Update your `.env` file:
-
-   ```
-   DATABASE_URL=postgresql://username:password@localhost/dbname
-   ```
-
-3. Restart the application
-
-## 🧪 Running Tests
-
-```bash
-# Install test dependencies
-uv pip install pytest pytest-cov
-
-# Run tests
-pytest
-```
-
-## 🛠️ Development Workflow
-
-1. Create a new branch for your feature or bugfix
-
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-2. Make your changes
-
-3. Run the application to test your changes
-
-   ```bash
-   python run.py
-   ```
-
-4. Commit your changes
-
-   ```bash
-   git add .
-   git commit -m "Add your feature description"
-   ```
-
-5. Push your changes and create a pull request
-   ```bash
-   git push origin feature/your-feature-name
-   ```
 
 ## 📚 Documentation
 
@@ -200,13 +128,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project currently is not assigned a license
 
 ## 📧 Contact
 
-Your Name - [your.email@example.com](mailto:your.email@example.com)
-
-Project Link: [https://github.com/yourusername/subtract-cloud](https://github.com/yourusername/subtract-cloud)
+Jacob Munoz - [jacob@subtractmanufacturing.com](mailto:jacob@subtractmanufacturing.com)
 
 ---
 
