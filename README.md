@@ -13,7 +13,7 @@ A modern, high-performance backend API built with FastAPI and SQLModel, designed
 ## 📋 Features
 
 - RESTful API with automatic OpenAPI documentation
-- Flexible data models for shipments and inventory items
+- Flexible object oriented Data Models
 - Database abstraction layer supporting both SQLite (development) and PostgreSQL (production)
 - Comprehensive validation and error handling
 - CORS middleware for frontend integration
