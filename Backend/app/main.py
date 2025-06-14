@@ -4,8 +4,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from .database import create_db_and_tables
 from .routes.items import router as items_router
 from .routes.shipments import router as shipments_router
+from .routes.orders import router as orders_router
 
-app = FastAPI(title="FastAPI with SQLModel")
+app = FastAPI(title="Subtract Manufacturing Backend Service")
 
 # Configure CORS
 app.add_middleware(
@@ -19,6 +20,7 @@ app.add_middleware(
 # Include routers
 app.include_router(items_router, prefix="/api")
 app.include_router(shipments_router, prefix="/api")
+#app.include_router(orders_router, prefix="/api")
 
 @app.on_event("startup")
 def on_startup():
@@ -26,4 +28,4 @@ def on_startup():
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to FastAPI with SQLModel"}
+    return {"message": "Subtract Manufacturing Backend Service is running!"}
