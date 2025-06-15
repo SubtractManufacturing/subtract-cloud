@@ -1,5 +1,5 @@
 from typing import Optional, List
-from datetime import datetime
+from datetime import datetime, timezone
 from sqlmodel import Field, SQLModel, Relationship
 from pydantic import validator
 
@@ -24,8 +24,8 @@ class ShipmentBase(SQLModel):
 # Database model (table definition)
 class Shipment(ShipmentBase, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-    updated_at: datetime = Field(default_factory=datetime.utcnow)
+    created_at: datetime = Field(default_factory=datetime.now(timezone.utc))
+    updated_at: datetime = Field(default_factory=datetime.now(timezone.utc))
     
     # You can add relationships here if needed, for example:
     # items: List["ShipmentItem"] = Relationship(back_populates="shipment")

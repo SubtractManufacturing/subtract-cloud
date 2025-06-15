@@ -20,8 +20,8 @@ class OrderBase(SQLModel):
 # Table model
 class Order(OrderBase, table=True):
     order_id: Optional[int] = Field(default=None, primary_key=True)
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-    updated_at: datetime = Field(default_factory=datetime.utcnow)
+    created_at: datetime = Field(default_factory=datetime.now(timezone.utc))
+    updated_at: datetime = Field(default_factory=datetime.now(timezone.utc))
 
     # relationships (assuming you have Customer and Quote models defined elsewhere)
     #customer: Optional["Customer"] = Relationship(back_populates="orders")
